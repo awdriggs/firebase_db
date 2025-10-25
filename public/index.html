@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Playlist</title>
+</head>
+<body>
+  <h1>My Playlist</h1>
+
+  <h2>Add a Song</h2>
+  <form id="song-form">
+    <div>
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required>
+    </div>
+    <div>
+      <label for="artist">Artist:</label>
+      <input type="text" id="artist" name="artist" required>
+    </div>
+    <button type="submit">Add Song</button>
+  </form>
+
+  <h2>Playlist</h2>
+  <div id="playlist"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
