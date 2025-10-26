@@ -13,12 +13,14 @@ Firebase is a platform by Google that provides backend services for web and mobi
 1. Go to https://console.firebase.google.com
 2. Click "Create a new Firebase project"
 3. Enter a project name (e.g., "my-playlist-app")
+![start page](guide_images/start.png)
 4. You can disable Google Analytics (not needed for this tutorial)
 5. Click "Create project"
 
 ### 2. Enable Firestore Database
 
 1. In your Firebase project, click "Build" in the left sidebar
+![find build](guide_images/click_build.png)
 2. Click "Firestore Database"
 3. Click "Create database"
 4. Choose "Start in test mode" (easier for learning)
@@ -30,6 +32,7 @@ Firebase is a platform by Google that provides backend services for web and mobi
 1. In your Firebase project, click the gear icon (Settings) → "Project settings"
 2. Go to the "Service accounts" tab
 3. Click "Generate new private key"
+![click to get private details](guide_images/secrets.png)
 4. A JSON file will download - keep this safe!
 5. Open the JSON file - you'll need three values from it:
    - `project_id`
@@ -60,6 +63,8 @@ npm start
 
 Visit http://localhost:3000
 
+Add a song to test. Check your terminal logs for any errors. I got one at first and had to turn on a service at another url.
+
 ## Deploy to Render
 
 1. Push your code to GitHub (make sure `.env` is in `.gitignore`!)
@@ -69,6 +74,7 @@ Visit http://localhost:3000
    - `FIREBASE_PROJECT_ID`
    - `FIREBASE_CLIENT_EMAIL`
    - `FIREBASE_PRIVATE_KEY`
+![click to upload env](guide_images/render_env.png)
 5. Deploy!
 
 **Note:** When adding the `FIREBASE_PRIVATE_KEY` to Render, paste it exactly as it appears in your `.env` file (with quotes and `\n` characters).
